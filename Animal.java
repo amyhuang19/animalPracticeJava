@@ -1,3 +1,7 @@
+/** Animal class: base class for animal types dog and cat
+ *  - 2 attributes: name and human age
+ *  - 4 methods: makeSound(), getName(), getHumanAge(), getAnimalAge()
+*/
 class Animal { //defines a class called Animal: object/instances
 
 	//instance variables

@@ -4,6 +4,8 @@ import java.util.Scanner; //Import the Scanner class for user input
 *   - creats Animal, Dog and Cat object
 *   - allow the user to input the name and age of the animals
 *   - display sounds/animal ages of animals
+*   Main class: creates instances of Animal, Dog, Cat and calls their methods
+*   - handles generic Animal objects and specific Dog/Cat objects with polymorphism
 */
 public class Main {
 	public static void main(String[] args) {

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # usage: $ bash run_java.sh
+# Bash script: compiles all files, runs the main file
 
 # Compile each file
 #   javac encounters error during compilation, non-0 exit status: 
