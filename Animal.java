@@ -15,9 +15,11 @@ class Animal { //defines a class called Animal: object/instances
 		System.out.println("Animal name: " + this.animalName);
 	} //getName
 	public int getHumanAge() {
-		System.out.println("Animal human age: " + this.humanAge);
 		return this.humanAge;
 	} //getHumanAge
+	public void printHumanAge() {
+		System.out.println("Animal human age: " + this.humanAge);
+    } //printHumanAge
 
 	//special methods
 	public void getAnimalAge() { //method paramters/return type everything must be same

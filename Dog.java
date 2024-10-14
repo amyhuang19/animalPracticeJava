@@ -17,7 +17,7 @@ class Dog extends Animal {
 	//overrided methods
 	@Override //annotation: following method overrides method from parent class (Animal), tells compiler/reader
 	public void makeSound() { //defines makeSound method inside Dog class, new version called w/ an instance of Dog
-		System.out.println("Bark"); //prints specific dog sound
+		System.out.println("The dog says: Bark"); //prints specific dog sound
 	} //closes makeSound method in Dog class
 	@Override
 	public void getAnimalAge() { //uses super class variable humanAge

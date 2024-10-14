@@ -11,16 +11,16 @@ public class Main {
 
 		//Create a generic Animal object
 		String animalName1 = "";
-		System.out.println("First Animal's name: ");
+		System.out.print("First Animal's name: ");
 		animalName1 = scanner.nextLine();
 		int animalHumanAge1 = 0;
-		System.out.println("First Animal's human age: ");
+		System.out.print("First Animal's human age: ");
 		animalHumanAge1 = scanner.nextInt();
 		scanner.nextLine(); //Consume leftover newline character: used to prevent scanner confusion
 
 		Animal genericAnimal1 = new Animal(animalName1, animalHumanAge1); //create generic Animal object
 		genericAnimal1.getName();
-		genericAnimal1.getHumanAge();
+		genericAnimal1.printHumanAge();
 		genericAnimal1.makeSound();
 		genericAnimal1.getAnimalAge();
 
@@ -37,7 +37,7 @@ public class Main {
 
 		Dog dog1 = new Dog(dogName1, dogHumanAge1);
 		dog1.getName();
-		dog1.getHumanAge();
+		dog1.printHumanAge();
 		dog1.makeSound();
 		dog1.getAnimalAge();
 
@@ -54,7 +54,7 @@ public class Main {
 
 		Cat cat1 = new Cat(catName1, catHumanAge1);
 		cat1.getName();
-		cat1.getHumanAge();
+		cat1.printHumanAge();
 		cat1.makeSound();
 		cat1.getAnimalAge();
 
@@ -63,10 +63,10 @@ public class Main {
 
 		//Create another generic Animal object
 		String animalName2 = "";
-		System.out.println("Second Animal's name: ");
+		System.out.print("Second Animal's name: ");
 		animalName2 = scanner.nextLine();
 		int animalHumanAge2 = 0;
-		System.out.println("Second Animal's human age: ");
+		System.out.print("Second Animal's human age: ");
 		animalHumanAge2 = scanner.nextInt();
 		scanner.nextLine(); //Consume leftover newline character: used to prevent scanner confusion
 
@@ -109,7 +109,7 @@ public class Main {
 
 	public static void handleAnimal(Animal animal) { //polymorphic method to handle any Animal (or subclass) and perform operations
 		animal.getName();       //Calls appropriate getName method (inherited)
-		animal.getHumanAge();   //Calls appropriate getHumanAge method (inherited)
+		animal.printHumanAge();   //Calls appropriate getHumanAge method (inherited)
 		animal.makeSound();     //Polymorphic call: Executes based on actual object type (Animal, Dog, or Cat)
 		animal.getAnimalAge();  //Polymorphic call: Executes based on actual object type
 	} //handleAnimal

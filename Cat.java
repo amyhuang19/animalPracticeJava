@@ -17,7 +17,7 @@ class Cat extends Animal { //defines another class Cat: extends Animal clas
 	//overrided methods
 	@Override //overrides Animal class def of makeSound
 	public void makeSound() {
-		System.out.println("Meow"); //prints cat sound
+		System.out.println("The cat says: Meow"); //prints cat sound
 	} //makeSound
 	@Override
 	public void getAnimalAge() { //uses super class variable humanAge
